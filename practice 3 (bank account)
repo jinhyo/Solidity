@@ -1,0 +1,19 @@
+pragma solidity ^0.4.24;
+
+contract Bank
+{
+    uint private balance = 100;
+    
+    function deposit(uint amount) public
+    {
+        balance += amount;
+    }
+    function withdrawal(uint amount) public
+    {
+        balance -= amount;
+    }
+    function getbalance() public view returns(uint)
+    {
+        return balance;
+    }
+}
