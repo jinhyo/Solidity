@@ -1,0 +1,15 @@
+pragma solidity ^0.4.24;
+
+contract MyName
+{
+    string myName = "Jinhyo Coin";
+    
+    function setmyName(string NewName) public 
+    {
+        myName=NewName;
+    }
+    function getMyName() view public returns(string)
+    {
+        return myName;
+    }
+}
